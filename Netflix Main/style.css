@@ -1,0 +1,281 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #e50914;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+.navbar a:hover {
+  color: #e50914;
+}
+
+.auth-buttons button {
+  background: #e50914;
+  border: none;
+  padding: 0.6rem 1rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.auth-buttons button:hover {
+  background: #f40612;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('https://wallpaperaccess.com/full/2703652.jpg') center/cover no-repeat;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.hero-title-img {
+  width: 250px;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  background: transparent;
+}
+
+/* Movie Grid */
+.category {
+  padding: 2rem;
+}
+
+.category h2 {
+  margin-bottom: 1rem;
+  color: #e50914;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.movie-card p {
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: #aaa;
+}
+
+/* Login Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: #141414;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  width: 100%;
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* 🔐 Login Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: #141414;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  width: 100%;
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 📱 Responsive for mobile */
+@media (max-width: 768px) {
+  .navbar { display: none; }
+  .header { flex-direction: column; text-align: center; }
+  .auth-buttons { margin-top: 0.5rem; }
+}
+
+
+/* 🔹 Mobile View (Responsive) */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .auth-buttons {
+    margin-top: 0.5rem;
+  }
+
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .movie-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title-img {
+    width: 200px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

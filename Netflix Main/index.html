@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🔺 Header -->
+  <header class="header">
+    <div class="logo">NETFLIX</div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#movie">Movies</a>
+      <a href="#series">Series</a>
+      <a href="#cartoons">Cartoons</a>
+      <a href="#kid">Kids</a>
+    </nav>
+    <div class="auth-buttons">
+      <button id="loginBtn">Login</button>
+    </div>
+  </header>
+
+  <!-- 🔥 Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png"
+        alt="Stranger Things Logo" class="hero-title-img">
+
+        <p class="hero-desc">
+          When a young boy vanishes, a small town uncovers a mystery involving secret experiments, supernatural forces and one strange little girl.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="https://www.netflix.com/title/80057281" target="_blank" class="btn">▶ Play</a>
+          <a href="https://www.netflix.com" target="_blank" class="btn btn-outline">ℹ More Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎬 Movies -->
+  <section class="category" id="movie">
+    <h2>Movies</h2>
+    <div class="movie-container">
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/60036761', '_blank')">
+        <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABaqbK9qieYYxEeVjW0zwHJgIzGUjAxWGrSLRI0nOwGUlXW498Jg3L2mZbGvVI7CViunFGycIy8u5ZCcqejsxAqPeYONeW9a_A_pC.webp?r=077" alt="Dark">
+        <p>Dark</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80013845', '_blank')">
+        <img src="https://m.media-amazon.com/images/M/MV5BZDYzMTk5M2ItMDBlOS00MjNhLThkMmEtNjFiNjM3OTJmNzZiXkEyXkFqcGc@._V1_.jpg" alt="Imperial Dreams">
+        <p>Imperial Dreams</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/81160697', '_blank')">
+        <img src="https://i.ytimg.com/vi/G0ZXsQo8j70/hq720.jpg" alt="The Gray Man">
+        <p>The Gray Man</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80991033', '_blank')">
+        <img src="https://lh5.googleusercontent.com/proxy/Ceu228szcHDvnxfwI-tbQ4mHfJuaENPflXdx7YszbQ9bL5nha21EtdVy141yQ-OnNu8p3X7cerrpnI3lv6ZZl_oEyCX1pQPw" alt="Damsel">
+        <p>Damsel</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📺 Series -->
+  <section class="category" id="series">
+    <h2>Series</h2>
+    <div class="movie-container">
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80192098', '_blank')">
+        <img src="https://image.tmdb.org/t/p/w500/rlCRM7U5g2hcU1O8ylGcqsMYHIP.jpg" alt="Money Heist">
+        <p>Money Heist</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80057281', '_blank')">
+        <img src="https://image.tmdb.org/t/p/w500/8Y43POKjjKDGI9MH89NW0NAzzp8.jpg" alt="Stranger Things">
+        <p>Stranger Things</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/70143836', '_blank')">
+        <img src="https://image.tmdb.org/t/p/w500/qJxzjUjCpTPvDHldNnlbRC4OqEh.jpg" alt="Breaking Bad">
+        <p>Breaking Bad</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/81231974', '_blank')">
+        <img src="https://cdnph.upi.com/svc/sv/i/5741745335222/2025/1/17453366225898/Wednesday-Season-2-gets-poster-ahead-of-teaser-trailer.jpg" alt="Wednesday 2">
+        <p>Wednesday 2</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧸 Cartoons -->
+  <section class="category" id="cartoons">
+    <h2>Cartoons</h2>
+    <div class="movie-container">
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80087783', '_blank')">
+        <img src="https://m.media-amazon.com/images/M/MV5BNThiNGFkYTItYzM5MC00MmRmLTljMGUtNjYzMzlmZjIyZjU2XkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg" alt="Minions">
+        <p>Minions</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/70075480', '_blank')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXCljLtuqOMsRDXGXcMANfHt-UMc2Gre6lvw&s" alt="Kung Fu Panda">
+        <p>Kung Fu Panda</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/60000412', '_blank')">
+        <img src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQcJrhCw4QOkB8U7T-MemQRz6fXD1qda7NaY0z6EnqhrANU5vxu1qEW37SR6XRTpW6ylCHdw2BgLyYWYpr6BLG469ueTuQZYkTN0lE_AGGiYtTcsHnVYU1UUT2-DrAtslshuU_YASaHn_uXRXs-JZy7yK.jpg?r=2c8" alt="Toy Story">
+        <p>Spellbound</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/60000412', '_blank')">
+        <img src="https://cdn.britannica.com/07/266507-050-095F46AB/Publicity-still-scene-The-Wild-Robot-movie.jpg" alt="The whild Robot">
+        <p>The wild Robot</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 👧 Kids -->
+  <section class="category" id="kid">
+    <h2>Kids</h2>
+    <div class="movie-container">
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80182574', '_blank')">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE68_YRqxWon9LCsIWuTovvgqQVuIgx1B_Og&s" alt="Moana">
+        <p>Moana</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80094310', '_blank')">
+        <img src="https://image.tmdb.org/t/p/w500/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg" alt="Finding Dory">
+        <p>Finding Dory</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80105699', '_blank')">
+        <img src="https://wallpapercave.com/wp/wp7870444.jpg" alt="Cars 3">
+        <p>Cars 3</p>
+      </div>
+      <div class="movie-card" onclick="window.open('https://www.netflix.com/title/80105699', '_blank')">
+        <img src="https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfRXQ365yo-dDyZQGUGANF2TY0PyDdqprQf-viQwIdq2M7QVaYi7KhLhEvP3RDl0bPU16B_Jwzepyh4rd8NldNSbN5uBm-QCAUw.jpg?r=7a3" alt="The super mario bros">
+        <p>The super mario bros</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔐 Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p class="small">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- 👇 Footer with your name -->
+  <footer style="text-align:center; background:#111; color:#ccc; padding:15px; margin-top:30px;">
+    It is created by <strong>@Abhinav</strong>
+  </footer>
+
+  <script>
+    const loginBtn = document.getElementById('loginBtn');
+    const loginModal = document.getElementById('loginModal');
+    const closeLogin = document.getElementById('closeLogin');
+
+    loginBtn.onclick = () => loginModal.style.display = 'flex';
+    closeLogin.onclick = () => loginModal.style.display = 'none';
+    window.onclick = (e) => { if (e.target == loginModal) loginModal.style.display = 'none'; };
+  </script>
+
+
+<!-- 🎵 Random Music Feature -->
+<button id="musicToggle" title="Toggle Music">🔈</button>
+
+<script>
+// 🎧 Random Songs List
+const songs = [
+  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+  "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+];
+
+// 🎶 Create Audio Element
+const audio = new Audio();
+audio.volume = 0.5; // medium volume
+audio.loop = true;  // keep playing
+let isMuted = false;
+
+// 🎲 Random song selection
+const randomSong = songs[Math.floor(Math.random() * songs.length)];
+audio.src = randomSong;
+
+// 🎬 Play after first user interaction (to avoid autoplay block)
+function startMusic() {
+  audio.play().then(() => {
+    console.log("🎵 Now Playing:", randomSong);
+  }).catch(() => {
+    console.warn("Autoplay blocked, waiting for user action");
+  });
+  document.removeEventListener("click", startMusic);
+}
+document.addEventListener("click", startMusic);
+
+// 🎚️ Toggle button functionality
+const musicToggle = document.getElementById("musicToggle");
+musicToggle.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.play();
+    isMuted = false;
+    musicToggle.textContent = "🔈";
+  } else {
+    if (!isMuted) {
+      audio.muted = true;
+      isMuted = true;
+      musicToggle.textContent = "🔇";
+    } else {
+      audio.muted = false;
+      isMuted = false;
+      musicToggle.textContent = "🔈";
+    }
+  }
+});
+</script>
+
+<style>
+/* 🎵 Music Button Style */
+#musicToggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e50914;
+  color: white;
+  border: none;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+#musicToggle:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  #musicToggle {
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+</style>
+
+<!-- 😱 Ultimate Horror Jumpscare Feature -->
+<script>
+// 🎃 Horror Data (Image + Matching Sound)
+const horrorData = [
+  {
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiG8LWYQLIDTYn5z8OqBOPozmNq6DquBFoyQ&s",
+    sound: "https://www.myinstants.com/media/sounds/horror-scream.mp3"
+  },
+  {
+    img: "https://i.ytimg.com/vi/yWnklcPjGUM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCUbe1QkzJ-QSOpGXaCY_e10ZUJtQ",
+    sound: "https://www.myinstants.com/media/sounds/female-scream.mp3"
+  },
+  {
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafnYVgzvlFM8E03W6oAV4kVOI42azrVjfTA&s",
+    sound: "https://www.myinstants.com/media/sounds/zombie-scream.mp3"
+  },
+  {
+    img: "https://wallpapers.com/images/hd/4k-horror-22nxx73uaxogf02g.jpg",
+    sound: "https://www.myinstants.com/media/sounds/woman-screaming.mp3"
+  },
+  {
+    img: "https://play-lh.googleusercontent.com/tHsZW4sWyTykyUIOmibm7bzdjxsRQTrHRqxdUzTfo8hpseBu8kOX6iEGXei6SvEbwHY",
+    sound: "https://www.myinstants.com/media/sounds/evil-laugh.mp3"
+  }
+];
+
+// 👻 Create full-screen overlay
+const horrorOverlay = document.createElement("div");
+horrorOverlay.id = "horrorOverlay";
+document.body.appendChild(horrorOverlay);
+
+// 🖼️ Image inside overlay
+const horrorImg = document.createElement("img");
+horrorImg.id = "horrorImage";
+horrorOverlay.appendChild(horrorImg);
+
+// 🔊 Scream sound
+const screamAudio = new Audio();
+screamAudio.volume = 1; // loud for scare!
+
+// Keep track to avoid repeats
+let usedIndexes = [];
+
+function triggerJumpscare() {
+  if (usedIndexes.length === horrorData.length) usedIndexes = [];
+
+  let randomIndex;
+  do {
+    randomIndex = Math.floor(Math.random() * horrorData.length);
+  } while (usedIndexes.includes(randomIndex));
+
+  usedIndexes.push(randomIndex);
+
+  const chosen = horrorData[randomIndex];
+  horrorImg.src = chosen.img;
+  screamAudio.src = chosen.sound;
+
+  // ⚡ Show image full-screen
+  horrorOverlay.style.display = "flex";
+  horrorImg.style.transform = "scale(1.5)";
+  screamAudio.play();
+
+  // Hide after 2 seconds
+  setTimeout(() => {
+    horrorOverlay.style.display = "none";
+    horrorImg.style.transform = "scale(1)";
+  }, 2000);
+}
+
+// 😈 Trigger every 10 seconds
+setInterval(triggerJumpscare, 10000);
+</script>
+
+<style>
+/* 💀 Horror Overlay Fullscreen Effect */
+#horrorOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  overflow: hidden;
+  animation: suddenFlash 0.2s ease-in;
+}
+
+#horrorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: horrorZoom 0.4s ease-in-out forwards;
+  filter: brightness(1.2) contrast(1.3) saturate(1.5);
+}
+
+/* ⚡ Sudden Flash */
+@keyframes suddenFlash {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* 😱 Image Zoom for scare */
+@keyframes horrorZoom {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(1.5); opacity: 1; }
+}
+</style>
+
+
+</body>
+</html>
